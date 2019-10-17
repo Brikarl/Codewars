@@ -15,12 +15,12 @@ findNb(91716553919377) --> -1
 def find_nb(m):
     # your code
     i = 1
-    m1 = 0
+    mresult = 0
     while True:
-        m1 += i ** 3
-        if m1 < m:
+        mresult += i ** 3
+        if mresult < m:
             i += 1
-        elif m1 == m:
+        elif mresult == m:
             return i
         else:
             return -1

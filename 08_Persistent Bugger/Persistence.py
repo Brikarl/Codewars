@@ -28,6 +28,11 @@ def persistence(n):
 
 
 # Best solution
-def narcissistic(value):
-    return value == sum(int(x) ** len(str(value)) for x in str(value))
+import operator
+def persistence(n):
+    i = 0
+    while n >= 10:
+        n = reduce(operator.mul,[int(x) for x in str(n)],1)
+        i += 1
+    return i
     
