@@ -1,2 +1,2 @@
 # Codewars
-Codewars个人实践
+Codewars personal practice
